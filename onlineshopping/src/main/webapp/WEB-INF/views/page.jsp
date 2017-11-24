@@ -23,17 +23,30 @@
 
     <!-- Custom styles for this template -->
     <link href="${css}/shop-homepage.css" rel="stylesheet">
+   
+ <link href="${css}/myapp.css" rel="stylesheet">
+
+    
 <c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
 <script type="text/javascript">
 window.menu='${title}';
-window.contextRoot	='${contextRoot}'
+window.contextRoot	='${contextRoot}';
+
+
+
+
 </script>
+
   </head>
 
   <body>
 <%@include file="./shared/navbar.jsp" %> 
 <div class="wrapper">
+
 <c:if test="${userClickHome==true }">
+
+	
+
  <%@include file="home.jsp" %>
 </c:if>
 <c:if test="${userClickAbout==true }">
@@ -41,21 +54,50 @@ window.contextRoot	='${contextRoot}'
 </c:if>
      
      
-     <c:if test="${userClickContact}==true">
+     <c:if test="${userClickContact==true}">
      
      <%@include file="contact.jsp"%>
      </c:if>
+      
+       <c:if test="${userClickAllProduct==true}">
+     
+     <%@include file="listProducts.jsp"%>
+     </c:if>
+     
+     
+       <c:if test="${userClickShowProduct==true}">
+     
+     <%@include file="singleProduct.jsp"%>
+     </c:if> 
+     
+      <c:if test="${userClickMangerProducts==true}">
+     
+     <%@include file="manage.jsp"%>
+     </c:if> 
+     
+     <c:if test="${userClickCategoryProducts}==true">
+     
+     <%@include file="listProducts.jsp"%>
+     </c:if>
+     
+     
       
       <%@include file="./shared/footer.jsp" %>
    
 
     <!-- Bootstrap core JavaScript -->
    <script src="${js}/jquery.min.js"></script>
+   <script src="${js}/popper.js"></script>
+<script src="${js}/bootstrap.min.js"></script>
 
-<script src="${js}/popper.min.js"></script>
-<script src="${js }/bootstrap.min.js"></script>
+
+<!-- Bootstrap jquery datatables -->
+<script src="${js}/jquery.dataTables.js"></script>
+
+<script src="${js}/myapps.js"></script>
 
 </div>
+
   </body>
 
 </html>

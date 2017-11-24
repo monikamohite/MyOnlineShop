@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages={"ril.com.onlineshoppingbackend.dto"})
 @EnableTransactionManagement
 public class HibernateConfig {
-	private final static String DATABASE_URL="jdbc:h2:tcp://localhost/~/monikadb";
+	private final static String DATABASE_URL="jdbc:h2:tcp://localhost/~/monika";
 	private final static String DATABASE_DRIVER ="org.h2.Driver";
 	private final static String DATABASE_DIALECT="org.hibernate.dialect.H2Dialect";
 	private final static String DATABASE_USERNAME="sa";

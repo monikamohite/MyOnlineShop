@@ -13,6 +13,7 @@ import ril.com.onlineshoppingbackend.dto.Product;
 @Transactional
 @Repository("productDAO")
 public class ProductDAOImpl implements ProductDAO{
+	
 	@Autowired
 	SessionFactory sessionFactory;
 	@Override

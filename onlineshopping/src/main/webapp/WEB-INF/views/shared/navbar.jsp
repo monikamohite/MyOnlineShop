@@ -23,13 +23,20 @@
               </a>
             </li>
             <li class="nav-item" id="about">
-              <a class="nav-link" href="/parascollection/about">About</a>
+              <a class="nav-link" href="/onlineshopping/about">About</a>
             </li>
             <li class="nav-item" id="services">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="/onlineshopping/services">Services</a>
             </li>
             <li class="nav-item" id="contact">
-              <a class="nav-link" href="/parascollection/contact">Contact</a>
+              <a class="nav-link" href="/onlineshopping/contact">Contact</a>
+            </li>
+             <li class="nav-item" id="AllProducts">
+              <a class="nav-link" href="/onlineshopping/show/all/products">View product</a>
+            </li>
+            <li class="nav-item" id="manageProducts">
+            <a class="nav-link" href="${contextRoot}/manage/products">Manage Products</a>
+            
             </li>
           </ul>
         </div>

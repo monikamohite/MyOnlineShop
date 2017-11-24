@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: onlineshopping
+Bundle-SymbolicName: onlineshopping
+Bundle-Version: 1.0.0.qualifier
+Export-Package: ril.com.onlineshopping.controller

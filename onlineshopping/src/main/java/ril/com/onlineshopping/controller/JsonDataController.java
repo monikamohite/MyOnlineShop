@@ -18,7 +18,7 @@ public class JsonDataController {
 	private ProductDAO productDAO;
 	@RequestMapping("/all/products")
 	@ResponseBody
-	public List<Product> getAllProducts()
+	public List<Product> getAllProducts() 
 	{
 		return productDAO.listActiveProducts();
 		
@@ -30,4 +30,5 @@ public List<Product> getAllProductByCategory(@PathVariable("id")int categoryId)
 {
 	return productDAO.listActiveProductByCategory(categoryId);
 }
+
 }

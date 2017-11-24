@@ -38,7 +38,7 @@ private int quantity;
 @Transient
 private MultipartFile file;
 @Column(name="is_active")
-
+@JsonIgnore
 private boolean active;
 
 @Column(name="category_id")
